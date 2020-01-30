@@ -2,7 +2,7 @@
 Overview:
 To maintain address book.
 Purpose:
-For showung list to user.
+For showing list to user.
 Author: Rutuja Tikhile
 Date: 29/01/2020
 """
@@ -12,7 +12,7 @@ from object_oriented_programs.addressbook.service import Service
 class AddressBook:
     def __init__(self):
         """
-
+        This is the address book method in which we are using services.
         """
         self.obj = Service()
 
@@ -39,3 +39,8 @@ class AddressBook:
         except Exception:
             print("You have enter wrong input!!")
             self.address_book()
+
+
+if __name__ == "__main__":
+    obj = AddressBook()
+    obj.address_book()

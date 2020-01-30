@@ -200,6 +200,16 @@ class Service:
                 print("Data not available")
 
 
+if __name__ == "__main__":
+    obj = Service()
+    obj.add_person()
+    obj.create()
+    obj.delete_person()
+    obj.save_as()
+    obj.save()
+    obj.open()
+    obj.edit_person()
+
 
 
 

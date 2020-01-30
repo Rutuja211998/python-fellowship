@@ -1,0 +1,74 @@
+{
+    "inventory": [
+        {
+            "name": "Rice",
+            "weight": "10",
+            "price_per_kg": "1000"
+        },
+        {
+            "name": "Pulses",
+            "weight": "10",
+            "price_per_kg": "900"
+        },
+        {
+            "name": "Wheat",
+            "weight": "10",
+            "price_per_kg": "600"
+        },
+        {
+            "name": "rice",
+            "weight": 2,
+            "price_per_kg": 10
+        },
+        {
+            "name": "wheat",
+            "weight": 2,
+            "price_per_kg": 10
+        },
+        {
+            "name": "rice",
+            "weight": 2,
+            "price_per_kg": 10
+        },
+        {
+            "name": "wheat",
+            "weight": 2,
+            "price_per_kg": 10
+        },
+        {
+            "name": "peas",
+            "weight": 1,
+            "price_per_kg": 50
+        },
+        {
+            "name": "dal",
+            "weight": 40,
+            "price_per_kg": 500
+        },
+        {
+            "name": "lentil",
+            "weight": 4,
+            "price_per_kg": 60
+        },
+        {
+            "name": "beans",
+            "weight": 2,
+            "price_per_kg": 60
+        },
+        {
+            "name": "black beans",
+            "weight": 2,
+            "price_per_kg": 100
+        },
+        {
+            "name": "dal",
+            "weight": 2,
+            "price_per_kg": 10
+        },
+        {
+            "name": "lentil",
+            "weight": 2,
+            "price_per_kg": 10
+        }
+    ]
+}

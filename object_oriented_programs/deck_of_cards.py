@@ -71,3 +71,11 @@ class DeckOfCards:
             print("Hearts: ", self.players[i]["Hearts"])
             print("Spades: ", self.players[i]["Spades"])
             print()
+
+
+if __name__ == "__main__":
+    DeckOfCards()
+    obj = DeckOfCards()
+    obj.deck_of_cards()
+    obj.deck_card_assign()
+    obj.card_display()
