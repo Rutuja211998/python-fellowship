@@ -1,0 +1,24 @@
+{
+    "Stock": [
+        {
+            "name": "google",
+            "no_of_share": "1000",
+            "price": "500"
+        },
+        {
+            "name": "facebook",
+            "no_of_share": "500",
+            "price": "2080"
+        },
+        {
+            "name": "microsoft",
+            "no_of_share": "900",
+            "price": "2500"
+        },
+        {
+            "name": "youtube",
+            "no_of_share": "550",
+            "price": "3000"
+        }
+    ]
+}

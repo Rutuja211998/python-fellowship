@@ -7,6 +7,7 @@ Author: Rutuja Tikhile.
 Date: 27/01/2020
 """
 import json
+import pprint
 
 
 class InventoryManager:
@@ -22,10 +23,10 @@ class InventoryManager:
 
         with open(self.json_file, 'r') as file:
             self.inventory = json.load(file)
-        # for item in self.inventory["inventory"]:
-        #     print("Adding data into json file.")
-            # print(data_serialized = json.dump(inventory, open('inv_management.json', "r"), indent=4))
-            # print(file, "value of {item['weight']}Kg of {item['name']} is {item['weight'] * item['price_per_kg']}")
+            pprint.pprint(self.inventory.items(), indent=4)
+
+            # for key, value in self.inventory.items():
+            #     print(key, value)
 
     def add_to_inventory(self):
         """

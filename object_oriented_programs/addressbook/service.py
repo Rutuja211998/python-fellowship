@@ -23,7 +23,8 @@ class Service:
         """
         try:
             file_name = input("Enter file name for creating new json file: ").strip()
-            if search("[a-zA-Z]", file_name) is not None:
+            if search("[a-zA-Z]", file_name) is not None:  # Returns a match for any character
+                # alphabetically between a and z, lower case OR upper case
                 f = open(file_name + ".json", 'w+')
                 f.close()
             else:
@@ -62,7 +63,7 @@ class Service:
         :return:
         """
         file_name = input("Enter file name with extension json: ").strip()
-        json_pattern = search("\.json", file_name)
+        json_pattern = search("\.json", file_name)  # \.Match any character except newline
         if json_pattern is not None and json_pattern.group() == ".json":
             select = 1
         else:
@@ -110,26 +111,26 @@ class Service:
                 self.person_data.append(new_person)
             print(self.person_data)
 
-    def delete_person(self):
-        """
-        Take two input from user first name and last name and then delete
-        the data from list.
-        :return:
-        """
-        try:
-            first_name = input("Enter first name: ").strip().upper()
-            last_name = input("Enter last name: ").strip().upper()
-            if not first_name.isalpha() and not last_name.isalpha():
-                raise ValueError
-        except ValueError:
-            print("You have to enter in alphabet")
-
-        else:
-            for i in range(len(self.person_data)):
-                if self.person_data[i]["first_name"] == first_name and self.person_data[i]["last_name"] == last_name:
-                    self.person_data.remove(self.person_data[i])
-                    print("Data deleted")
-                    break
+    # def delete_person(self):
+    #     """
+    #     Take two input from user first name and last name and then delete
+    #     the data from list.
+    #     :return:
+    #     """
+    #     try:
+    #         first_name = input("Enter first name: ").strip().upper()
+    #         last_name = input("Enter last name: ").strip().upper()
+    #         if not first_name.isalpha() and not last_name.isalpha():
+    #             raise ValueError
+    #     except ValueError:
+    #         print("You have to enter in alphabet")
+    #
+    #     else:
+    #         for i in range(len(self.person_data)):
+    #             if self.person_data[i]["first_name"] == first_name and self.person_data[i]["last_name"] == last_name:
+    #                 self.person_data.remove(self.person_data[i])
+    #                 print("Data deleted")
+    #                 break
 
     def edit_person(self):
         """
@@ -181,7 +182,7 @@ class Service:
                                 self.person_data[i]["state_name"] = state
                         elif choice == 6:
                             zip = input("Enter zip code:").strip()
-                            if not zip.isnumeric() and len(zip) != 6:
+                            if not zip.isnumeric() and len(zip) == 5:
                                 print("You have to enter zip code in numeric and length must be 6")
                             else:
                                 self.person_data[i]["zip_code"] = zip
@@ -204,7 +205,7 @@ if __name__ == "__main__":
     obj = Service()
     obj.add_person()
     obj.create()
-    obj.delete_person()
+    # obj.delete_person()
     obj.save_as()
     obj.save()
     obj.open()

@@ -69,6 +69,11 @@
             "name": "lentil",
             "weight": 2,
             "price_per_kg": 10
+        },
+        {
+            "name": "colam rice",
+            "weight": 1,
+            "price_per_kg": 0
         }
     ]
 }
