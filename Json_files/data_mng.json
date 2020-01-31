@@ -1,8 +1,0 @@
-{"Rice": [{"name": "basmati", "weight": "10", "price": "1000"},
-          {"name": "colam", "weight": "10", "price": "600"}
-          ],
- "Pulses": [{"name": "moong dal", "weight": "10", "price": "900"},
-            {"name": "tur dal", "weight": "10", "price": "1400"}],
- "Wheat": [{"name": "brown", "weight": "10", "price": "600"},
-            {"name": "white", "weight": "10", "price": "800"}
-            ]}
