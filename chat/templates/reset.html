@@ -1,0 +1,31 @@
+{% autoescape off %}
+<html>
+    <head>
+        <style>
+            div {
+                text-align: center;
+                background-color: rgba(255,0,0,0.75);
+                height: 150px;
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+            }
+            a {
+                align: centre;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+<!--                       padding: 2px;-->
+                }
+            </style>
+        </head>
+    <div>
+        <body>
+            <p>Hello {user.username},</p>
+            <p>Please click the link below to reset your password on {domain}</p>
+            <a href="http://{{domain}}{% url 'reset' token=token %}"><button> Activate </button></a>
+        </body>
+    </div>
+</html>
+{% endautoescape %}
